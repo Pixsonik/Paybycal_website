@@ -1,0 +1,17 @@
+.rkp-image {
+  background-image: url("../../asset/img/banner/banner.png");
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rkp-text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}

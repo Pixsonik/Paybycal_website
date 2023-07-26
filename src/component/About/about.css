@@ -1,0 +1,22 @@
+.aboutText {
+  padding: 0 25vw;
+  padding-top: 39px;
+  padding-bottom: 228px;
+  /* font-family: "Open Sans"; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #ffffff;
+}
+.aboutTitle {
+  padding-top: 211px;
+  /* font-family: "Open Sans"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  color: #ffffff;
+}

@@ -1,0 +1,21 @@
+ .navThree{
+    display: flex;
+ }
+ .nav-bar{
+    width: 60%;
+ }
+.nav-main{
+    height: 90px;
+    background: #FFFFFF;
+}
+@media only screen and (max-width: 768px) {
+     .navThree{
+        display: none !important;
+     }
+     .nav-bar{
+        width: 100%;
+     }
+     .nav-main{
+        height: auto;
+     }
+  }

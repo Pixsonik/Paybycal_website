@@ -1,0 +1,23 @@
+.freeCoinText{
+    /* font-family: 'Open Sans'; */
+font-style: normal;
+font-weight: 600;
+font-size: 27.566px;
+line-height: 38px;
+text-align: right;
+color: #FFFFFF;
+}
+.yellow{
+    color: #FAFF00;
+    font-size: 32px;
+    
+}
+.coinsContent{
+    text-align: right;
+}
+.logo{
+    margin-top: 217px;
+}
+.freeCoinText{
+    margin-top: 20px;
+}

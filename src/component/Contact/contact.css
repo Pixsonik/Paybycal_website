@@ -1,0 +1,147 @@
+.ContForm {
+  margin-bottom: 150px;
+}
+.contactTitle {
+  /* font-family: 'Open Sans'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 68px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 100px 0;
+}
+.iconDiv {
+  display: flex;
+}
+p {
+  margin: 0;
+}
+.icon {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  margin: 5px 0 0 0;
+  font-size: 23px;
+}
+.iconText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.iconSecText {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.5148px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+}
+.iconDiv:nth-child(2) {
+  margin-top: 58px;
+}
+.iconDiv:nth-child(3) {
+  margin-top: 58px;
+}
+.formTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  justify-content: center;
+}
+.smallinput {
+  /* position: absolute; */
+  width: 521.46px;
+  height: 24.38px;
+  left: 759px;
+  top: 395.53px;
+  background: #ffffff;
+  box-shadow: inset 0px 0.755701px 3.0228px 0.755701px rgba(0, 0, 0, 0.2);
+  border-radius: 5.87586px;
+}
+
+.biginput {
+  /* position: absolute; */
+  display: block;
+  width: 521.46px;
+  height: 101.14px;
+  left: 759px;
+  top: 460.36px;
+  background: #ffffff;
+  box-shadow: inset 0px 0.755701px 3.0228px 0.755701px rgba(0, 0, 0, 0.2);
+  border-radius: 5.87586px;
+}
+.formbtn {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.1368px;
+  line-height: 22px;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e5364f;
+  background: #ffffff;
+  box-shadow: 0px 3.0228px 3.0228px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  width: 243.77px;
+  text-align: center;
+  height: 39.02px;
+  margin-top: 35px;
+}
+.first {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.second {
+  margin-bottom: 10px;
+}
+.formcol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .contactRow{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+    .iconDiv{
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+    .iconDiv > *{
+        text-align: center;
+    }
+    .smallinput{
+        width: 100%;
+    }
+    .biginput{
+        width: 100%;
+    }
+}

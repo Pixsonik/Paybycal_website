@@ -1,0 +1,87 @@
+.HowTitle {
+  /* font-family: 'Open Sans'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  /* display: flex;    */
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.one {
+  /* font-family: 'Open Sans'; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 256.712px;
+  line-height: 350px;
+  color: #ffffff;
+  opacity: 0.25;
+}
+.oneTitle {
+  /* font-family: "Open Sans"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.oneText {
+  /* font-family: 'Open Sans'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+}
+.HowImgOne {
+  /* position: absolute;
+  width: 762px;
+  height: 460px;
+  left: 677px;
+  top: 1716px; */
+  /* background: url(image.png); */
+}
+
+.oneContent{
+    position: absolute;
+    left: 165px;
+    margin-top: 39px;
+}
+.firstCont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.howSecTitle{
+  /* font-family: 'Open Sans'; */
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+text-align: right;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.howSecText{
+/* font-family: 'Open Sans'; */
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 33px;
+text-align: right;
+color: #FFFFFF;
+}
+.secondCont{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.secContent{
+  position: absolute;
+  right: 146px;
+  margin-top: 35px;
+}

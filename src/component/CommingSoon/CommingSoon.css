@@ -1,0 +1,38 @@
+.comImg {
+  height: 361px;
+  width: auto;
+}
+.commingText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 77px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f95b30;
+  transform: rotate(1.14deg);
+}
+.paybycalExpert {
+  /* position: absolute; */
+  width: 393.66px;
+  height: 169.42px;
+  left: 180.74px;
+  top: 4639.27px;
+  margin: 26px 0 0 248px;
+  transform: rotate(1.14deg);
+}
+
+/* .rkp-start { */
+  /* will-change: transform;
+    transform: translate3d(50vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d; */
+/* } */
+
+/* .rkp-end { */
+  /* will-change: transform;
+  transform: translate3d(-50vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d; */
+/* } */
