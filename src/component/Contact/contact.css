@@ -1,6 +1,12 @@
 .ContForm {
   margin-bottom: 150px;
 }
+.contactMain{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 2px solid black; */
+}
 .contactTitle {
   /* font-family: 'Open Sans'; */
   font-style: normal;
@@ -14,7 +20,16 @@
 }
 .iconDiv {
   display: flex;
+  /* border: 2px solid black; */
+  width: 100%;
 }
+#emaildiv{
+  margin-bottom: 80px;
+}
+#locationdiv{
+  margin-bottom: 55px;
+}
+
 p {
   margin: 0;
 }
@@ -25,18 +40,26 @@ p {
   margin: 5px 0 0 0;
   font-size: 23px;
 }
+.licon{
+  padding-top: 3px;
+}
 .iconText {
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  letter-spacing: -0.015em;
+  /* letter-spacing: -0.015em; */
   text-transform: uppercase;
+  padding: 2px 0px;
   color: #ffffff;
 }
+.iconSecTexta{text-decoration: none; color: white;}
+.iconSecTexta:hover{color: white;}
+.iconSecText:hover{color: white;}
 .iconSecText {
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
+  text-decoration: none;
   font-style: normal;
   font-weight: 600;
   font-size: 14.5148px;
@@ -51,7 +74,7 @@ p {
   margin-top: 58px;
 }
 .formTitle {
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -72,6 +95,8 @@ p {
   background: #ffffff;
   box-shadow: inset 0px 0.755701px 3.0228px 0.755701px rgba(0, 0, 0, 0.2);
   border-radius: 5.87586px;
+  border: none;
+  padding: 10px;
 }
 
 .biginput {
@@ -84,6 +109,7 @@ p {
   background: #ffffff;
   box-shadow: inset 0px 0.755701px 3.0228px 0.755701px rgba(0, 0, 0, 0.2);
   border-radius: 5.87586px;
+  border: none;
 }
 .formbtn {
   font-family: "Montserrat";
@@ -103,6 +129,7 @@ p {
   text-align: center;
   height: 39.02px;
   margin-top: 35px;
+  border: none;
 }
 .first {
   margin-top: 25px;
@@ -144,4 +171,32 @@ p {
     .biginput{
         width: 100%;
     }
+}
+@media (max-width:500px){
+  .contactTitle{
+    font-size: 30px;
+  }
+}
+@media (max-width:1000px){
+  .contactMain{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .iconDiv {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    width: 100%;
+  } */
+  /* .licon{
+    border: 1px solid green;
+  } */
+
+  /* .iconText{text-align: center;} */
+  /* #locationdiv{
+    width: 100%;
+  } */
 }

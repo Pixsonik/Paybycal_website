@@ -9,9 +9,140 @@
 .rkp-text {
   font-style: normal;
   font-weight: 800;
-  font-size: 64px;
+  font-size: 54px;
   line-height: 87px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+}
+.rkp-text2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  padding: 3px 0px;
+  /* line-height: 37px; */
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0px 10px;
+}
+.lastLine{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 3px 0px;
+}
+
+#bannerArrow{
+  display: block;
+  width: 7%;
+  margin: auto;
+}
+#bannerArrow2{
+  display: none;
+}
+
+@media (max-width:430px){
+  .rkpsecond{
+    margin: 0px !important;
+  }
+  .rkp-image{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .rkp-text {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0px 10px;
+  }
+  .rkp-text2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0px 10px;
+  }
+  .lastLine{
+    position: absolute;
+    bottom: 50px;
+    left: 0%;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    /* margin-top: 10px; */
+  }
+  #bannerArrow{display: none !important;}
+  #bannerArrow2{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 42%;
+    width: 15%;
+  }
+}
+
+@media (min-width:600px) and (max-width:799px){
+  .rkp-text {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 3px 10px;
+  }
+  .rkp-text2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0px 10px;
+  }
+}
+@media (min-width:431px) and (max-width:599px){
+  .rkp-text {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 3px 5px;
+  }
+  .rkp-text2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0px 10px;
+  }
+  .lastLine{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    /* margin-top: 10px; */
+  }
 }

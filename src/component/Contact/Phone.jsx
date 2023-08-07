@@ -16,57 +16,56 @@ const Phone = () => {
         <div className="container ContForm">
           <p className="contactTitle">Get In Touch</p>
           <div className="row contactRow">
-            <div className="col-6">
-              {/* Cal */}
-              <div className="iconDiv">
+            <div className="col-12 contactMain">
+              {/* Call */}
+              <div id="calldiv" className="iconDiv">
                 <div className="col-lg-3">
                   <i className="icon fa-solid fa-phone"></i>
                 </div>
                 <div className="col-lg-9">
                   <p className="  iconText">Call Us</p>
-                  <p className="iconSecText">
-                    +91 99999999
+                  <p  className="iconSecText">
+                    <a className="iconSecTexta" target="_blank" href="tel: 8108006060">+91 8108006060</a>                  
                     <br />
-                    +91 99999999
+                    <a className="iconSecTexta" target="_blank" href="tel: 8108336060">+91 8108336060</a>
                   </p>
                 </div>
               </div>
               {/* email */}
-              <div className="iconDiv">
+              <div id="emaildiv" className="iconDiv">
                 <div className="col-lg-3">
                   <i class="icon fa-solid fa-envelope"></i>
                 </div>
                 <div className="col-lg-9">
                   <p className="  iconText">Email</p>
-                  <p className="iconSecText">
-                    Amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  <a target="_blank" href="mailto: support@paybycal.com" className="iconSecText">
+                  support@paybycal.com
+                  </a>
                 </div>
               </div>
               {/* location */}
-              <div className="iconDiv">
+              <div id="locationdiv" className="iconDiv">
                 <div className="col-lg-3">
-                  <i class="icon fa-sharp fa-solid fa-location-dot"></i>
+                  <i class="icon fa-sharp fa-solid fa-location-dot licon"></i>
                 </div>
                 <div className="col-lg-9">
-                  <p className="  iconText">Location</p>
-                  <p className="iconSecText">
-                    Amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                  </p>
+                  <p className="iconText">Location</p>
+                  <a target="_blank" href="https://goo.gl/maps/TgmAzmPWjUWHeRZN7" className="iconSecText">
+                  1003, 10th floor, kamdhenu commerz, sector 14, kharghar, Navi Mumbai 410210
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-8 formcol">
+            {/* <div className="col-lg-6 col-md-6 col-8 formcol">
                   <div className="formcontent">
                     <p className="formTitle">Write to us</p>
                     <input type="text" placeholder="Full Name" name="" id="" className="smallinput first" />
                     <input type="email" placeholder="Email" name="" id="" className="smallinput second" />
                     <input type="text" placeholder="Your massage" className="biginput" />
+                    <textarea class="form-control" placeholder="Your massage" id="floatingTextarea"></textarea>
                     <button className="formbtn">Send</button>
                   </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

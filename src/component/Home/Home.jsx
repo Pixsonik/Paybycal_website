@@ -9,6 +9,10 @@ import Comming from '../CommingSoon/CommingSoon'
 import Privacy from '../Privacy/Privacy'
 import Freecoins from '../FreeCoins/FreeCoins'
 import FooterTwo from '../FooterTwo/FooterTwo'
+import BoxContainer from '../BoxContainer/BoxContainer';
+import WhatSay from '../What Say/WhatSay';
+import Rewards from '../Rewards/Rewards';
+import LastContainer from '../last container/LastContainer';
 
 
 const Home = () => {
@@ -16,16 +20,24 @@ const Home = () => {
       <>
       <Navbar/>
       <Banner/>
+      <BoxContainer />
       <div  style={{background: "linear-gradient(104.31deg, #F95B30 5.98%, #D81C65 93.2%)"}}>
-        <About/>
-        <How/>
+        <WhatSay />
+        <Rewards />
+       
+        {/* <How/> */}
         <IndividualIntervalsExample/>
-        <Comming/>
+        {/* <Comming/> */}
       </div>
       <Privacy/>
       <div  style={{background: "linear-gradient(104.31deg, #F95B30 5.98%, #D81C65 93.2%)"}}>
-          <Freecoins/>
+          {/* <Freecoins/> */}
+       <About/>
       </div>
+      <div  style={{background: "linear-gradient(104.31deg, #F95B30 5.98%, #D81C65 93.2%)"}}>
+      <LastContainer />
+      </div>
+      
       <FooterTwo/>
     </>
   )

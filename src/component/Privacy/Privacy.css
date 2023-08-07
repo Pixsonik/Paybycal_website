@@ -8,3 +8,11 @@
   background-attachment: fixed;
 
 }
+@media (max-width:1100px){
+  .privacy{display: none;}
+  .privacy2{display: block !important;}
+  .privacy2 img{
+    width: 100%;
+    height: auto;
+  }
+}

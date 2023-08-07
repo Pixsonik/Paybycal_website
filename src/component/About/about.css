@@ -1,22 +1,116 @@
-.aboutText {
-  padding: 0 25vw;
-  padding-top: 39px;
-  padding-bottom: 228px;
-  /* font-family: "Open Sans"; */
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #ffffff;
+
+.aboutHeadingdiv{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
 }
-.aboutTitle {
-  padding-top: 211px;
-  /* font-family: "Open Sans"; */
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 87px;
+.aboutHeadingdiv h1{
+  padding: 3px 0px;
   text-align: center;
-  color: #ffffff;
+  color: white;
+  text-transform: uppercase;
+}
+.emptydiv4{
+  background-color: #fff;
+  border-radius: 22px;
+  height: 5px;
+  margin-right: 98px;
+  width: 6%;
+}
+.aboutmain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0px;
+  margin-bottom: 100px;
+}
+.aboutmain h1{
+  color: white;
+  padding: 3px 0px;
+}
+.aboutmain p{
+  width: 60%;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width:430px){
+  .aboutHeadingdiv h1{
+    padding: 3px 0px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+  }
+  .aboutmain h1{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 3px 5px;
+  }
+  .aboutmain p{
+    width: 85%;
+    color: white;
+    text-align:center;
+  }
+  .emptydiv4{
+    background-color: #fff;
+    border-radius: 22px;
+    height: 5px;
+    margin-right: 58px;
+    width: 16%;
+  }
+}
+@media (min-width:769px) and (max-width:999px){
+  .aboutmain p{
+    width: 80%;
+    color: white;
+    text-align:justify;
+  }
+  .emptydiv4{
+    background-color: #fff;
+    border-radius: 22px;
+    height: 5px;
+    margin-right: 98px;
+    width: 8%;
+  }
+}
+
+@media (min-width:600px) and (max-width:799px){
+  .aboutmain p{
+    width: 90%;
+    color: white;
+    text-align:center;
+  }
+  .emptydiv4{
+    background-color: #fff;
+    border-radius: 22px;
+    height: 5px;
+    margin-right: 98px;
+    width: 8%;
+  }
+}
+@media (min-width:431px) and (max-width:599px){
+  .aboutmain p{
+    width: 90%;
+    color: white;
+    text-align:center;
+  }
+  .aboutmain h1{
+    font-size: 30px;
+    padding: 3px 10px;
+    color: white;
+    text-align:center;
+  }
+  .emptydiv4{
+    background-color: #fff;
+    border-radius: 22px;
+    height: 5px;
+    margin-right: 98px;
+    width: 8%;
+  }
 }

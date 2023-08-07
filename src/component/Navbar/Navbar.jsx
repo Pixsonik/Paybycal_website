@@ -25,7 +25,7 @@ function NavScrollExample() {
             style={{ maxHeight: '200px' , display:"flex", justifyContent:"space-around" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="#about">About Us</Nav.Link>
             <Nav.Link href="#action2">How it works</Nav.Link>
             <Nav.Link href="#action2">Experts</Nav.Link>
@@ -37,8 +37,10 @@ function NavScrollExample() {
          <span>
          Get the App
          </span>
-         <img src={palystore} alt="" />
-         <img src={Triangle} alt="" />
+         <a target='_blank' href="https://play.google.com/store/apps/details?id=com.helthofit "><img src={palystore} alt="" /></a>
+         <a target='_blank' href="https://apps.apple.com/in/app/paybycal/id1642523395 "><img src={Triangle} alt="" /></a>
+         {/* <img src={palystore} alt="" />
+         <img src={Triangle} alt="" /> */}
        </div>
       </Container>
     </Navbar>

@@ -1,0 +1,211 @@
+.mainReward{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.spaceClass{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+/* .mainReward .h1{
+    margin: 50px 0px;
+    font-size: 44px;
+    color: white;
+    font-weight: 600;
+    padding:  3px 0px;
+} */
+.rewardHeadingdiv{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* margin-top: 60px; */
+}
+.rewardHeadingdiv h1{
+    padding: 5px 0px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.rewardHeading2{
+    padding: 3px 0px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    /* margin-top: -20px; */
+    font-size: 45px;
+}
+.emptydiv3{
+    background-color: #fff;
+    border-radius: 22px;
+    height: 5px;
+    margin-right: 478px;
+    width: 20%;
+}
+
+.rewardCard{
+    /* border: 2px solid green; */
+    width: 400px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.whiteBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid black; */
+    background-color: white;
+    color: black;
+    padding: 30px;
+    width: 300px;
+    /* height: 100px; */
+}
+.whiteBack p{
+    margin-left: 80px;
+    color: #F75635;
+    font-size: 20px;
+    font-weight: 600;
+}
+.rewardImgdiv{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    /* border: 2px solid white; */
+    width: 300px;
+    height: 310px;
+}
+.rewardImgdiv img{
+    width: 58%;
+}
+#img2{  
+    width: 65% !important;
+    margin-top: 12px;
+}
+#img3{
+    width: 53% !important;
+}
+
+@media (min-width:1000px) and (max-width:1100px){
+    .rewardCard {
+        /* width: 296px;
+        height: 350px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* margin-left: 20px; */
+    }
+    .rewardImgdiv img{
+        width: 48%;
+    }
+    .rewardImgdiv #img1{
+        position: absolute;
+        top: 20px;
+        left: -10px;
+    }
+    .mainReward {
+        width: 100%;
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: normal;
+        margin-top: 60px;
+        flex-wrap: wrap;
+    }
+    .spaceClass{
+        display: flex !important;
+        justify-content: space-between !important;
+        /* align-items: center; */
+        flex-wrap: wrap !important;
+        /* margin-top: 60px; */
+    }
+    #reward3{
+        width: 346px;
+        height: 350px;
+        /* margin-right: 60px; */
+    }
+}
+
+@media (min-width:431px) and (max-width:599px){
+    .rewardHeading2{
+        padding: 3px 0px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        /* margin-top: -20px; */
+        font-size: 27px;
+    }
+    .emptydiv3{
+        background-color: #fff;
+        border-radius: 22px;
+        height: 5px;
+        margin-right: 288px;
+        width: 20%;
+    }
+}
+
+@media (min-width:431px) and (max-width:999px){
+    .spaceClass{display: none;}
+    .rewardmobilecontainer{display: block !important;}
+    .rewardCard{
+        margin: auto;
+    }
+    .carousel-control-prev {
+        left: 32px;
+    }
+    .carousel-control-next {
+        right: 32px;
+    }
+}
+
+@media (max-width:430px){
+    .rewardHeadingdiv{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+    }
+    .rewardHeadingdiv h1{
+        padding: 5px 0px;
+        text-align: center;
+        color: white;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    .rewardHeading2{
+        padding: 3px 0px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        /* margin-top: -20px; */
+        font-size: 21px;
+        font-weight: 700;
+        margin-right: 0px;
+    }
+    .emptydiv3{
+        background-color: #fff;
+        border-radius: 22px;
+        height: 5px;
+        margin-right: 228px;
+        width: 20%;
+    }
+    .spaceClass{display: none;}
+    .rewardmobilecontainer{display: block !important;}
+}
