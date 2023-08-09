@@ -61,58 +61,61 @@ function IndividualIntervalsExample() {
 
       {/* mobile view */}
       <div className="exp">
-      <div className="background"></div>
-      <Carousel style={{ display: 'none' }} className='containerr featureCon2'>
-        <Carousel.Item interval={1500}  >
-          <div className="positiondiv">
-            {/* <div className="background"><img src={rectangle} alt="" /></div> */}
-            <img className="d-block w-100 cimg2" src={Asset1} alt="First slide" />
-            <p className='settarget'>SET TARGET</p>
-            <div className="featureediv ">
-              <p>Fat Loss</p>
-              <p>Muscle Gain</p>
-              <p>Toned Body</p>
+        <div className="background"></div>
+        <Carousel style={{ display: 'none' }} className='containerr featureCon2'>
+          <Carousel.Item interval={1500}  >
+            <p className='settarget2'>SET TARGET</p>
+            <div className="positiondiv2">
+              <img className="d-block w-100 cimg2" src={Asset1} alt="First slide" />
+              <div className="sidediv2">
+                <div className="featureediv2 ">
+                  <div className='dotDiv'><div className='dot'></div> <p style={{marginLeft:'10px'}}>Fat Loss</p></div>
+                  <div className='dotDiv'><div className='dot'></div><p style={{marginLeft:'10px'}}>Muscle Gain</p></div>
+                  <div className='dotDiv'><div className='dot'></div><p style={{marginLeft:'10px'}}>Toned Body</p></div>
+                </div>
+              </div>
             </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item interval={1500}>
-          <div className="positiondiv">
-            {/* <div className="background"></div> */}
-            <img className="d-block w-100 cimg2" src={Asset3} alt="fourth slide" />
-            <p className='settarget'>REDEEM CALCOINS</p>
-            <div className="featureediv ">
-              <p>Expert Coaches</p>
-              <p>Amazing Products</p>
-              {/* <p>Toned Body</p> */}
+          </Carousel.Item>
+          <Carousel.Item interval={1500}  >
+            <p className='settarget2'>REDEEM CALCOINS</p>
+            <div className="positiondiv2">
+              <img className="d-block w-100 cimg2" src={Asset3} alt="First slide" />
+              <div className="sidediv2">
+                <div className="featureediv2 ">
+                <div className='dotDiv'><div className='dot'></div><p style={{marginLeft:'10px'}}>Expert Coaches</p></div>
+                <div className='dotDiv'><div className='dot'></div><p style={{marginLeft:'10px'}}>Amazing Products</p></div>
+                </div>
+              </div>
             </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item interval={1500}>
-          <div className="positiondiv">
-            {/* <div className="background"></div> */}
-            <img className="d-block w-100 cimg2" src={Asset2} alt="Second slide" />
-            <p className='settarget'>TRACK YOUR ACTIVITIES</p>
-            <div className="featureediv ">
-              <p>Steps</p>
-              <p>Exercises</p>
-              <p>Meals</p>
+          </Carousel.Item>
+          <Carousel.Item interval={1500}  >
+            <p className='settarget2'>TRACK YOUR ACTIVITIES</p>
+            <div className="positiondiv2">
+              <img className="d-block w-100 cimg2" src={Asset2} alt="First slide" />
+              <div className="sidediv2">
+                <div className="featureediv2 ">
+                <div className='dotDiv'><div className='dot'></div><p style={{marginLeft:'10px'}}>Steps</p></div>
+                <div className='dotDiv'><div className='dot'></div><p style={{marginLeft:'10px'}}>Exercises</p></div>
+                <div className='dotDiv'><div className='dot'></div><p style={{marginLeft:'10px'}}>Meals</p></div>
+                </div>
+              </div>
             </div>
-          </div>
-        </Carousel.Item>
-        <Carousel.Item interval={1500}>
-          <div className="positiondiv">
-            {/* <div className="background"></div> */}
-            <img className="d-block w-100 cimg2" src={Asset4} alt="Third slide" />
-            <p className='settarget'>COMPLETE DAILY TARGET</p>
-            <div className="featureediv ">
-              <p>Earn Calcoin</p>
-              {/* <p>Muscle Gain</p>
-              <p>Toned Body</p> */}
+          </Carousel.Item>
+          <Carousel.Item interval={1500}  >
+            <p className='settarget2'>COMPLETE DAILY TARGET</p>
+            <div className="positiondiv2">
+              <img className="d-block w-100 cimg2" src={Asset4} alt="First slide" />
+              <div className="sidediv2">
+                <div className="featureediv2 ">
+                <div className='dotDiv'><div className='dot'></div><p style={{marginLeft:'10px'}}>Earn Calcoin</p></div>
+                </div>
+              </div>
             </div>
-          </div>
-        </Carousel.Item>
-        
-      </Carousel>
+          </Carousel.Item>
+
+
+
+        </Carousel>
       </div>
 
     </>
@@ -120,3 +123,56 @@ function IndividualIntervalsExample() {
 }
 
 export default IndividualIntervalsExample;
+
+
+
+// {/* <Carousel.Item interval={1500}>
+//             <div className="positiondiv">
+//               {/* <div className="background"></div> */}
+//               <img className="d-block w-100 cimg2" src={Asset4} alt="Third slide" />
+//               <p className='settarget'>COMPLETE DAILY TARGET</p>
+//               <div className="featureediv ">
+//                 <p>Earn Calcoin</p>
+//                 {/* <p>Muscle Gain</p>
+//               <p>Toned Body</p> */}
+//               </div>
+//             </div>
+//           </Carousel.Item> */}
+
+
+// {/* <Carousel.Item interval={1500}>
+//             <div className="positiondiv">
+//               {/* <div className="background"></div> */}
+//               <img className="d-block w-100 cimg2" src={Asset3} alt="fourth slide" />
+//               <p className='settarget'>REDEEM CALCOINS</p>
+//               <div className="featureediv ">
+//                 <p>Expert Coaches</p>
+//                 <p>Amazing Products</p>
+//                 {/* <p>Toned Body</p> */}
+//               </div>
+//             </div>
+//           </Carousel.Item>
+//           <Carousel.Item interval={1500}>
+//             <div className="positiondiv">
+//               {/* <div className="background"></div> */}
+//               <img className="d-block w-100 cimg2" src={Asset2} alt="Second slide" />
+//               <p className='settarget'>TRACK YOUR ACTIVITIES</p>
+//               <div className="featureediv ">
+//                 <p>Steps</p>
+//                 <p>Exercises</p>
+//                 <p>Meals</p>
+//               </div>
+//             </div>
+//           </Carousel.Item>
+//           <Carousel.Item interval={1500}>
+//             <div className="positiondiv">
+//               {/* <div className="background"></div> */}
+//               <img className="d-block w-100 cimg2" src={Asset4} alt="Third slide" />
+//               <p className='settarget'>COMPLETE DAILY TARGET</p>
+//               <div className="featureediv ">
+//                 <p>Earn Calcoin</p>
+//                 {/* <p>Muscle Gain</p>
+//               <p>Toned Body</p> */}
+//               </div>
+//             </div>
+//           </Carousel.Item> */}

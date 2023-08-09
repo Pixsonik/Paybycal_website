@@ -7,11 +7,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from '../../asset/img/navbar/logo_1.png';
 import palystore from '../../asset/img/navbar/google-play_1.png';
 import Triangle from '../../asset/img/navbar/app-store_1.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import "./Navbar.css";
 
 
 function NavScrollExample() {
+  const location = useLocation()
+  console.log(location,'locationnnnnn')
   return (
     <Navbar bg="light" expand="lg" className='nav-main'>
       <Container>
@@ -25,11 +27,12 @@ function NavScrollExample() {
             style={{ maxHeight: '200px' , display:"flex", justifyContent:"space-around" }}
             navbarScroll
           >
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="#about">About Us</Nav.Link>
-            <Nav.Link href="#action2">How it works</Nav.Link>
-            <Nav.Link href="#action2">Experts</Nav.Link>
-            <Nav.Link href='/contact'>Contact</Nav.Link>
+            <Nav.Link style={{color:location.pathname=='/'?'red':'grey'}} href="/">Home</Nav.Link>
+            <Nav.Link style={{color:location.pathname=='/about'?'red':'grey'}}  href="#about">About Us</Nav.Link>
+            <Nav.Link style={{color:location.pathname=='/works'?'red':'grey'}}  href="#action2">How it works</Nav.Link>
+            <Nav.Link style={{color:location.pathname=='/blog'?'red':'grey'}}  href="/blog">Blogs</Nav.Link>
+            {/* <Nav.Link href="#action2">Experts</Nav.Link> */}
+            <Nav.Link style={{color:location.pathname=='/contact'?'red':'grey'}} href='/contact'>Contact</Nav.Link>
           </Nav>
           
         </Navbar.Collapse>

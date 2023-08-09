@@ -1,7 +1,7 @@
 import React from 'react'
 import "./whatSay.css";
 import Bannerimg from "../../asset/img/whatsay/Rectangle.png";
-
+import Carousel from 'react-bootstrap/Carousel';
 
 export default function WhatSay() {
     return (
@@ -12,7 +12,7 @@ export default function WhatSay() {
                 <div className="emptydiv2"></div>
             </div>
             {/* <div id="carouselExample" class="carousel slide"> */}
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleAutoplaying" class="carousel slide whatsaydesktopcarousel" data-bs-ride="carousel">
                 <div class="carousel-inner car">
                     <div class="carousel-item active">
                         <div className="row whatflexbox">
@@ -75,6 +75,69 @@ export default function WhatSay() {
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+
+
+            {/* mobile view */}
+            <Carousel style={{ display: 'none' }} className='containerr featureCon2'>
+                <Carousel.Item interval={1500}  >
+                    <div className="row whatflexbox">
+                        <div className="col-lg-6 wFirstDiv">
+                            <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                            <div className="imgdiv">
+                                <img src={Bannerimg} alt="" />
+                                <h5>Nemo enim ipsam</h5>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 mainsideimgdiv">
+                            <img className='sideImg' src={Bannerimg} alt="" />
+                        </div>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item interval={1500}  >
+                    <div className="row whatflexbox">
+                        <div className="col-lg-6 wFirstDiv">
+                            <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                            <div className="imgdiv">
+                                <img src={Bannerimg} alt="" />
+                                <h5>Nemo enim ipsam</h5>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 mainsideimgdiv">
+                            <img className='sideImg' src={Bannerimg} alt="" />
+                        </div>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item interval={1500}  >
+                    <div className="row whatflexbox">
+                        <div className="col-lg-6 wFirstDiv">
+                            <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                            <div className="imgdiv">
+                                <img src={Bannerimg} alt="" />
+                                <h5>Nemo enim ipsam</h5>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 mainsideimgdiv">
+                            <img className='sideImg' src={Bannerimg} alt="" />
+                        </div>
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item interval={1500}  >
+                    <div className="row whatflexbox">
+                        <div className="col-lg-6 wFirstDiv">
+                            <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                            <div className="imgdiv">
+                                <img src={Bannerimg} alt="" />
+                                <h5>Nemo enim ipsam</h5>
+                            </div>
+                        </div>
+                        <div className="col-lg-6 mainsideimgdiv">
+                            <img className='sideImg' src={Bannerimg} alt="" />
+                        </div>
+                    </div>
+                </Carousel.Item>
+
+
+            </Carousel>
         </div>
     )
 }

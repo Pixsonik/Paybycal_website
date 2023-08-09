@@ -272,6 +272,7 @@
 
 
 @media (max-width:430px){
+    .whatsaydesktopcarousel{display: none !important;}
     .whatsayHeadingdiv{
         display: flex;
         /* justify-content: center; */
