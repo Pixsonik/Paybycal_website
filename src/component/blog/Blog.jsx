@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import "./blog.css";
 import Blogimg from "../../asset/img/blogs/m-post-card-overlay.png";
+import Blogimg2 from "../../asset/img/blogs/Rectangle 38.png";
 import { useEffect } from 'react';
 import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar'
 import FooterTwo from '../FooterTwo/FooterTwo'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 // import ReactHtmlParser from 'react-html-parser'
 
@@ -42,10 +45,114 @@ export default function Blog() {
         navigate('/mainblog')
     }
 
+    const responsive = {
+        superLargeDesktop: {
+            breakpoint: { max: 4000, min: 3000 },
+            items: 7
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 5,
+            dots: true
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 3
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
+
     return (
         <>
         <Navbar/>
             <h1 className='blogHeading'>Blogs</h1>
+
+        {/* category sections */}
+        <div className="categoryDivv">
+        <Carousel
+                    className='catblogslider'
+                    responsive={responsive}
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={3000}
+                    // arrows={true}
+                    showDots={false}
+                    arrows={false}
+                    // showDots={false}
+                    emulateTouch={true}
+                    renderButtonGroupOutside={true}
+                    renderDotsOutside={false}
+                    // centerMode={centerMode}
+                    rewindWithAnimation={true}
+                >
+
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    <div class="card catmaincard" style={{ width: '25rem' }}>
+                        <img src={Blogimg2} class="card-img-top catmainimg" alt="..." />
+                        <div class="card-body catbody">
+                            <h5 class="card-title cathead">Mental health & mindfulness</h5>
+                        </div>
+                    </div>
+                    
+                   
+                </Carousel>
+                </div>
             <div className="blogMainPicDiv">
                 <img src={Blogimg} alt="" />
             </div>

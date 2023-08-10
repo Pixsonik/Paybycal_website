@@ -11,7 +11,7 @@ const Banner = () => {
           <p className="rkp-text">"Stay active, <br /> earn rewards!"</p>
           <p className="rkp-text2">It's time to make Fitness a rewarding Habit</p>
         </div>
-        <p className="lastLine">Paybycal is the subsidiary of helthofit pvt ltd</p>
+        {/* <p className="lastLine">Paybycal is the subsidiary of helthofit pvt ltd</p> */}
         <img id="bannerArrow" src={arrow} alt="" />
         <img id="bannerArrow2" src={arrow} alt="" />
       </div>

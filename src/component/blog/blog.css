@@ -65,6 +65,27 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+.cathead{
+    color: #F95B30;
+    font-size: 15px !important;
+}
+.catbody{
+    padding: 10px !important;
+}
+.catmaincard{
+    width: 15rem !important;
+}
+.catmainimg{
+    height: 150px !important;
+}
+
+.categoryDivv{
+     /* border: 2px solid black; */
+    margin: 50px 0px;
+}
+
+
+
 
 @media (max-width:430px){
     .blogMainPicDiv {
@@ -100,4 +121,9 @@ a{
         width: 100%;
         height: 100%;
     }
+    .catmaincard{
+        width: 15rem !important;
+        margin: auto;
+    }
+
 }

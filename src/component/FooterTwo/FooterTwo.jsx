@@ -26,6 +26,7 @@ const FooterTwo = () => {
                 <img src={facebook} alt="facebook" />
                 <img src={linkdin} alt="facebook" />
                 </div>
+                <p className="footerlastLine">Paybycal is the subsidiary of helthofit pvt ltd</p>
               </div>
             </div>
                </div>
@@ -34,7 +35,7 @@ const FooterTwo = () => {
               <div className='col-lg-4 col-md-4 col-6 ThirdContent'>
                 <div className='footerThird'>
                  <img src={img} alt="" />
-                 <p className='footerData'>Copyright © 2022 Paybycal</p>
+                 <p className='footerData'>Copyright © 2023 Paybycal</p>
                 </div>
               </div>
            </div>
