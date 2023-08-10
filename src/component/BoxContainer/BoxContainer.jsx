@@ -81,7 +81,7 @@ export default function BoxContainer() {
                 <Carousel style={{display:'none'}} className='boxmobilecontainer '>
                     <Carousel.Item interval={1000}  >
                         <div className="card" style={{ width: '18rem', height: 'auto',borderRadius:'0px' }}>
-                            <img src={Bannerimg} className="card-img-top" alt="..." />
+                            <img src={Bannerimg} className="card-img-top boxCardImg" alt="..." />
                             {/* <div className="card-body">
                                 <h5 className="card-title">Get connected</h5>
                                 <p className="card-text">Download our app to your Android and iPhone and connect it to your preferred tracker. Get, Set, Go!</p>
@@ -90,7 +90,7 @@ export default function BoxContainer() {
                     </Carousel.Item>
                     <Carousel.Item interval={500}>
                     <div className="card" style={{ width: '18rem',height:'auto',borderRadius:'0px' }}>
-                            <img src={Bannerimg2} className="card-img-top" alt="..." />
+                            <img src={Bannerimg2} className="card-img-top boxCardImg" alt="..." />
                             {/* <div className="card-body">
                                 <h5 className="card-title">Get Moving</h5>
                                 <p className="card-text">Walk, run or dance but let your every step count! Be active and get chance to reward yourself with our Calcoins</p>
@@ -99,7 +99,7 @@ export default function BoxContainer() {
                     </Carousel.Item>
                     <Carousel.Item>
                     <div className="card" style={{ width: '18rem',height:'auto',borderRadius:'0px' }}>
-                            <img src={Bannerimg3} className="card-img-top" alt="..." />
+                            <img src={Bannerimg3} className="card-img-top boxCardImg" alt="..." />
                             {/* <div className="card-body">
                                 <h5 className="card-title">Reward yourself</h5>
                                 <p className="card-text">Trade your steps for deserving rewards, treat yourself, and redeem them within your community. You've earned it!</p>

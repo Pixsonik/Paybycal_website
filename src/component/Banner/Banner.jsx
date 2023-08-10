@@ -6,7 +6,8 @@ const Banner = () => {
   return (
     <>
       <div className="rkp-image">
-        <div className="rkpsecond" style={{margin: "345px 0px"}}>
+        <div className="rkpsecond" style={{margin: "140px 0px"}}>
+        {/* <div className="rkpsecond" style={{margin: "345px 0px"}}> */}
           <p className="rkp-text">"Stay active, <br /> earn rewards!"</p>
           <p className="rkp-text2">It's time to make Fitness a rewarding Habit</p>
         </div>

@@ -77,6 +77,10 @@
         display: block !important;
         margin: 20px 0px;
     }
+    .boxCardImg{
+        width: 80% !important;
+        margin: auto !important;
+    }
     .boxPCcontainer{display: none;}
 }
 
