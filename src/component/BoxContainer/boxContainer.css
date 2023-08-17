@@ -25,6 +25,7 @@
 .card img{
     /* border: 2px solid green; */
     /* max-height: 350px; */
+    border-radius: 8px;
 }
 .card-body{
     padding: 30px;

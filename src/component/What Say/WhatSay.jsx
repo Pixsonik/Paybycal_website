@@ -1,6 +1,10 @@
 import React from 'react'
 import "./whatSay.css";
 import Bannerimg from "../../asset/img/whatsay/Rectangle.png";
+import boy from "../../asset/img/whatsay/boy.jpg";
+import girl from "../../asset/img/whatsay/girl.jpg";
+import girl1 from "../../asset/img/whatsay/girl2.jpg";
+
 import Carousel from 'react-bootstrap/Carousel';
 
 export default function WhatSay() {
@@ -17,42 +21,56 @@ export default function WhatSay() {
                     <div class="carousel-item active">
                         <div className="row whatflexbox">
                             <div className="col-lg-6 wFirstDiv">
-                                <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                                <p>"Living in a small town, I don't have access to fancy gyms. Thanks to this app, I can work out from home without any equipment and still see amazing results!"</p>
                                 <div className="imgdiv">
-                                    <img src={Bannerimg} alt="" />
-                                    <h5>Nemo enim ipsam</h5>
+                                    {/* <img src={Bannerimg} alt="" /> */}
+                                    <h5>- Jaya P</h5>
                                 </div>
                             </div>
                             <div className="col-lg-6 mainsideimgdiv">
-                                <img className='sideImg' src={Bannerimg} alt="" />
+                                <img className='sideImg' src={girl} alt="" />
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div className="row whatflexbox">
                             <div className="col-lg-6 wFirstDiv">
-                                <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                                <p>"I travel a lot for work, and maintaining a fitness routine was tough. With this app's travel-friendly workouts, I can stay in shape no matter where I am in India."</p>
                                 <div className="imgdiv">
-                                    <img src={Bannerimg} alt="" />
-                                    <h5>Nemo enim ipsam</h5>
+                                    {/* <img src={Bannerimg} alt="" /> */}
+                                    <h5>- Sameer R</h5>
                                 </div>
                             </div>
                             <div className="col-lg-6 mainsideimgdiv">
-                                <img className='sideImg' src={Bannerimg} alt="" />
+                                <img className='sideImg' src={boy} alt="" />
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div className="row whatflexbox">
                             <div className="col-lg-6 wFirstDiv">
-                                <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                                <p> "I've lost 15 kgs using this app, and what I love most is that it doesn't promote crash diets. It encourages a balanced approach that's sustainable, even with our Indian food habits."</p>
                                 <div className="imgdiv">
-                                    <img src={Bannerimg} alt="" />
-                                    <h5>Nemo enim ipsam</h5>
+                                    {/* <img src={Bannerimg} alt="" /> */}
+                                    <h5>- Karan A</h5>
                                 </div>
                             </div>
                             <div className="col-lg-6 mainsideimgdiv">
-                                <img className='sideImg' src={Bannerimg} alt="" />
+                                <img className='sideImg' src={boy} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div className="row whatflexbox">
+                            <div className="col-lg-6 wFirstDiv">
+                                <p> "I was skeptical about virtual coaching, but the trainers on this app are responsive and knowledgeable. It's like having a personal coach right at home!" </p>
+                                <div className="imgdiv">
+                                    {/* <img src={Bannerimg} alt="" /> */}
+                                    <h5>- Tanvi D</h5>
+                                </div>
+                            </div>
+                            <div className="col-lg-6 mainsideimgdiv">
+                                <img className='sideImg' src={girl1} alt="" />
                             </div>
                         </div>
                     </div>
@@ -82,61 +100,59 @@ export default function WhatSay() {
                 <Carousel.Item interval={1500}  >
                     <div className="row whatflexbox">
                         <div className="col-lg-6 wFirstDiv">
-                            <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                            <p>"Living in a small town, I don't have access to fancy gyms. Thanks to this app, I can work out from home without any equipment and still see amazing results!"</p>
                             <div className="imgdiv">
-                                <img src={Bannerimg} alt="" />
-                                <h5>Nemo enim ipsam</h5>
+                                <img src={girl} alt="" />
+                                <h5>- Jaya P</h5>
                             </div>
                         </div>
                         <div className="col-lg-6 mainsideimgdiv">
-                            <img className='sideImg' src={Bannerimg} alt="" />
+                            <img className='sideImg' src={girl} alt="" />
                         </div>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item interval={1500}  >
                     <div className="row whatflexbox">
                         <div className="col-lg-6 wFirstDiv">
-                            <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                            <p>"I travel a lot for work, and maintaining a fitness routine was tough. With this app's travel-friendly workouts, I can stay in shape no matter where I am in India."</p>
                             <div className="imgdiv">
                                 <img src={Bannerimg} alt="" />
-                                <h5>Nemo enim ipsam</h5>
+                                <h5>- Sameer R</h5>
                             </div>
                         </div>
                         <div className="col-lg-6 mainsideimgdiv">
-                            <img className='sideImg' src={Bannerimg} alt="" />
+                            <img className='sideImg' src={boy} alt="" />
                         </div>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item interval={1500}  >
                     <div className="row whatflexbox">
                         <div className="col-lg-6 wFirstDiv">
-                            <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                            <p>"I've lost 15 kgs using this app, and what I love most is that it doesn't promote crash diets. It encourages a balanced approach that's sustainable, even with our Indian food habits."</p>
                             <div className="imgdiv">
                                 <img src={Bannerimg} alt="" />
-                                <h5>Nemo enim ipsam</h5>
+                                <h5>- Karan A</h5>
                             </div>
                         </div>
                         <div className="col-lg-6 mainsideimgdiv">
-                            <img className='sideImg' src={Bannerimg} alt="" />
+                            <img className='sideImg' src={boy} alt="" />
                         </div>
                     </div>
                 </Carousel.Item>
                 <Carousel.Item interval={1500}  >
                     <div className="row whatflexbox">
                         <div className="col-lg-6 wFirstDiv">
-                            <p>"Using the fitness app has been a game-changer for me! I've lost 15 pounds in just two months, and I feel more energetic than ever. The app's personalized workout plans and meal suggestions have been spot on. Highly recommend it!"</p>
+                            <p>"I was skeptical about virtual coaching, but the trainers on this app are responsive and knowledgeable. It's like having a personal coach right at home!"</p>
                             <div className="imgdiv">
                                 <img src={Bannerimg} alt="" />
-                                <h5>Nemo enim ipsam</h5>
+                                <h5>- Tanvi D</h5>
                             </div>
                         </div>
                         <div className="col-lg-6 mainsideimgdiv">
-                            <img className='sideImg' src={Bannerimg} alt="" />
+                            <img className='sideImg' src={girl1} alt="" />
                         </div>
                     </div>
                 </Carousel.Item>
-
-
             </Carousel>
         </div>
     )
