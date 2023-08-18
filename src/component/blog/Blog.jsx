@@ -22,6 +22,8 @@ export default function Blog() {
     const [catID, setCatID] = useState('')
     const [noArticle, setNOarticle] = useState(false)
     const [mainBlog, setMainblog] = useState([])
+    const [catshow, setCatshow]= useState(false)
+    const [view, setView]= useState(true)
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -102,6 +104,11 @@ export default function Blog() {
         navigate('/mainblog', { state: { id: id } })
     }
 
+    const categoryshow = ()=>{
+        setCatshow(!catshow)
+        setView(!view)
+    }
+
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 2000 },
@@ -163,8 +170,8 @@ export default function Blog() {
             <Navbar />
             <h1 className='blogHeading'>Blogs</h1>
 
-            {/* category sections */}
-            <div className="categoryDivv">
+            {/* category sections mobile view */}
+            <div style={{display:'none'}} className="categoryDivv">
                 <Carousel
                     className='catblogslider'
                     responsive={responsive}
@@ -197,6 +204,18 @@ export default function Blog() {
                 </Carousel>
             </div>
 
+            {/* category desktop view */}
+            <div className={catshow? "catDesk2":'catDesk'}>
+            {category.map((item) => {
+                        return (<div onClick={() => setCatID(item.id)} class={`card ${catID === item.id ? 'catmaincard' : 'catmaincard2'} `} style={{ width: '27rem',padding:'10px' }}>
+                            <img src={item.image} class="card-img-top catmainimg" alt="..." />
+                            <div class="card-body catbody">
+                                <h5 class={`card-title ${catID === item.id ?'cathead':'cathead2'} `}>{item.article_name}</h5>
+                            </div>
+                        </div>)
+                    })}
+            </div>
+            <a onClick={categoryshow} href='#'  id='catshowbtn' >{view? "View All":"View Less"}</a>
 
             <Carousel
                 className='catblogslider'

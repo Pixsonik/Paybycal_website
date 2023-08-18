@@ -150,6 +150,45 @@ a {
     padding: 0px 80px;
 } */
 
+.catDesk{
+    /* border: 2px solid black; */
+    margin: 0px 0px;
+    display: grid;
+    /* padding: 0px 50px; */
+    padding-left: 50px;
+    grid-template-columns: repeat(auto-fill,minmax(260px, 1fr));
+    grid-template-rows:1fr;
+    grid-auto-rows: 0;
+    justify-content: space-between;  
+    overflow-y: hidden; 
+}
+
+.catDesk2{
+    /* border: 2px solid red; */
+    margin: 0px 0px;
+    display: grid;
+    /* padding: 0px 50px; */
+    padding-left: 50px;
+    grid-template-columns: repeat(auto-fill,minmax(260px, 1fr));
+    grid-template-rows:1fr;
+    /* grid-auto-rows: 0; */
+    justify-content: space-between;   
+}
+
+#catshowbtn{
+    color: #F95B30;
+    font-weight: 600;
+    /* float: right; */
+    /* clear: both; */
+    margin-right: 50px;
+    margin-bottom: 80px !important;
+    text-decoration: underline;
+    /* border: 2px solid black; */
+    display: block;
+    text-align: right;
+}
+
+
 @media (min-width:801px) and (max-width:998px) {
     .delecol{
         width: auto !important;
@@ -157,6 +196,32 @@ a {
 }
 
 @media (min-width:768px) and (max-width:840px) {
+    .catDesk{
+        /* border: 2px solid black; */
+        margin: 40px 0px;
+        display: grid;
+        /* padding: 0px 50px; */
+        padding-left: 10px !important;
+        /* grid-template-columns: repeat(auto-fill,minmax(180px, 1fr)); */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:1fr;
+        grid-auto-rows: 0;
+        justify-content: space-between;  
+        overflow-y: hidden; 
+    }
+    .catDesk2{
+        /* border: 2px solid black; */
+        margin: 40px 0px;
+        display: grid;
+        /* padding: 0px 50px; */
+        padding-left: 10px !important;
+        /* grid-template-columns: repeat(auto-fill,minmax(180px, 1fr)); */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:1fr;
+        /* grid-auto-rows: 0; */
+        justify-content: space-between;  
+        overflow-y: hidden; 
+    }
     .blogSingleImg{
         display: none !important;
     }
@@ -305,6 +370,12 @@ a {
         /* text-align: left !important; */
         font-size: 15px;
     }
+    .categoryDivv{
+        display: block !important;
+    }
+    #catshowbtn{display: none;}
+    .catDesk{display: none;}
+    .catDesk2{display: none;}
 }
 
 @media (max-width:357px) {
