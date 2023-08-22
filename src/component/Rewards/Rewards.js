@@ -1,14 +1,14 @@
 import React from 'react'
 import "./reward.css";
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from "../../asset/img/reward/image 35.png";
+import img1 from "../../asset/img/reward/image 38.png";
 import img2 from "../../asset/img/reward/image 36.png";
 import img3 from "../../asset/img/reward/image 37.png";
 
 export default function Rewards() {
     return (
         <>
-            <div className='mainReward'>
+            <div  className='mainReward'>
                 <div className="rewardHeadingdiv">
                     <h2 className='rewardHeading2'>How will we benefit you?</h2>
                     <div className="emptydiv3"></div>

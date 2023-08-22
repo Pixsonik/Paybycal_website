@@ -2,6 +2,7 @@ import React from 'react'
 import "./whatSay.css";
 import Bannerimg from "../../asset/img/whatsay/Rectangle.png";
 import boy from "../../asset/img/whatsay/boy.jpg";
+import boy2 from "../../asset/img/whatsay/boy2.jpg";
 import girl from "../../asset/img/whatsay/girl.jpg";
 import girl1 from "../../asset/img/whatsay/girl2.jpg";
 
@@ -56,7 +57,7 @@ export default function WhatSay() {
                                 </div>
                             </div>
                             <div className="col-lg-6 mainsideimgdiv">
-                                <img className='sideImg' src={boy} alt="" />
+                                <img className='sideImg' src={boy2} alt="" />
                             </div>
                         </div>
                     </div>
@@ -135,7 +136,7 @@ export default function WhatSay() {
                             </div>
                         </div>
                         <div className="col-lg-6 mainsideimgdiv">
-                            <img className='sideImg' src={boy} alt="" />
+                            <img className='sideImg' src={boy2} alt="" />
                         </div>
                     </div>
                 </Carousel.Item>

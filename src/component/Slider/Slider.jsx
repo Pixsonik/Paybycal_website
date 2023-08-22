@@ -1,13 +1,13 @@
 import Carousel from 'react-bootstrap/Carousel';
-import slider1 from '../../asset/img/slider/feature 1.png'
-import slider2 from '../../asset/img/slider/feature 2.png'
+import slider1 from '../../asset/img/slider/newfeature 04.png'
+import slider2 from '../../asset/img/slider/newfeature 01.png'
 import slider3 from '../../asset/img/slider/feature 3.png'
-import slider4 from '../../asset/img/slider/feature 4.png'
+import slider4 from '../../asset/img/slider/newfeature 02.png'
 
-import Asset1 from '../../asset/img/slider/Asset 1.png'
-import Asset2 from '../../asset/img/slider/Asset 2.png'
+import Asset1 from '../../asset/img/slider/Mnew1.png'
+import Asset2 from '../../asset/img/slider/Mnew2.png'
 import Asset3 from '../../asset/img/slider/Asset 3.png'
-import Asset4 from '../../asset/img/slider/Asset 4.png'
+import Asset4 from '../../asset/img/slider/Mnew3.png'
 import rectangle from '../../asset/img/slider/Rectangle 93.png'
 import './Slider.css';
 
@@ -16,7 +16,7 @@ import './Slider.css';
 function IndividualIntervalsExample() {
   return (
     <>
-      <div className="sliderHeading">
+      <div id='action2' className="sliderHeading">
         <h1 className='featureHeading'>FEATURES</h1>
         <div className="emptydiv"></div>
       </div>

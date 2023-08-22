@@ -1,0 +1,8 @@
+.faq{
+    padding: 0px 100px;
+}
+@Media (max-width:430px){
+    .faq{
+        padding: 0px 10px;
+    }
+}

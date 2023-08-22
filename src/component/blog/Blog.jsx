@@ -19,7 +19,7 @@ import { Link } from 'react-router-dom';
 export default function Blog() {
     const [data, setData] = useState([])
     const [category, setCategory] = useState([])
-    const [catID, setCatID] = useState('')
+    const [catID, setCatID] = useState(1)
     const [noArticle, setNOarticle] = useState(false)
     const [mainBlog, setMainblog] = useState([])
     const [catshow, setCatshow]= useState(false)
@@ -39,12 +39,13 @@ export default function Blog() {
 
     const getCategory = () => {
         let url = "https://paybycal.com/api/h_article_category_list_web.php"
+
         axios.get(url).then((resp) => {
             console.log('new categoryyyyyy', resp.data)
             // if(resp.data.status == 'true'){
 
             setCategory(resp.data.data)
-            setCatID(resp.data.data[0].id)
+            // setCatID(resp.data.data[0].id)
             // changeCategory()
             // }else{}
         }).catch((err) => {
@@ -101,7 +102,7 @@ export default function Blog() {
 
     const navtoMain = (id) => {
         console.log('navigate id', id)
-        navigate('/mainblog', { state: { id: id } })
+        navigate(`/mainblog/${id}`, { state: { id: id } })
     }
 
     const categoryshow = ()=>{

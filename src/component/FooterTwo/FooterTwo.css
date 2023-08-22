@@ -4,6 +4,7 @@
 .firstCol{
     display: flex;
     align-items: center;
+    /* border: 2px solid green; */
 }
 .firstCol ul{
     height: 70%;
@@ -23,12 +24,13 @@ color: #747373;
 }
 .footerThird{
     /* height: 70%; */
-    margin-bottom: 100px;
+    /* height: 60%; */
+    /* margin-bottom: 100px; */
     /* border: 2px solid black; */
     display: flex;
-    align-items: center;
+    align-items:flex-end;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .ThirdContent{
     /* border: 2px solid red; */
@@ -47,7 +49,7 @@ color: #F45237;
 overflow: hidden;
 }
 .footerlastLine{
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     font-weight: 600;
 font-size: 13px;
@@ -57,16 +59,32 @@ color: #747373;
     display: flex;
     /* align-items: end; */
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    height: 70%;
+    /* height: 70%; */
     /* border: 2px solid black; */
 }
 .socialContent{
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
+}
+.fContent{
+    /* border: 2px solid black; */
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
     justify-content: space-around;
 }
+.fLine{
+    width: 2px;
+    height: 35px;
+    background-color: gray;
+}
+/* #fcontactnumber{
+    margin-top: 26px;
+} */
+
 @media only screen and (max-width: 768px) {
    
     .footercontent {
@@ -81,5 +99,13 @@ color: #747373;
     .footerData{
         padding: 3px;
         text-align: center;
+    }
+  }
+
+  @media (max-width:430px){
+    .fLine{display: none;}
+    .fContent{
+        display: flex;
+        flex-direction: column;
     }
   }

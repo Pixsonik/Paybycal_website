@@ -1,6 +1,7 @@
 .rkp-image {
   /* background-image: url("../../asset/img/banner/banner.png"); */
-  background-image: url("../../asset/img/banner/hero\ banner.jpg");
+  /* background-image: url("../../asset/img/banner/hero\ banner.jpg"); */
+  background-image: url("../../asset/img/banner/PBC_hero\ banner.jpg");
   width: 100%;
   height: auto;
   /* height: 100vh; */
@@ -70,7 +71,7 @@
   .rkp-image {
     /* background-image: url("../../asset/img/banner/banner.png"); */
     /* background-image: url("../../asset/img/banner/herobanner-responsive.png"); */
-    background-image: url("../../asset/img/banner/hero\ banner\ \(2\).png");
+    background-image: url("../../asset/img/banner/PBC_hero\ banner\ \(1\).png");
     width: 100%;
     height: auto;
     background-repeat: no-repeat;

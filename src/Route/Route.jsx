@@ -5,6 +5,10 @@ import Phone from '../component/Contact/Phone';
 import Blog from '../component/blog/Blog';
 import MainBlog from '../component/blog/MainBlog';
 
+import PrivacyFooter from '../component/privacyFooter/PrivacyFooter';
+import Faq from '../component/FAQ/Faq';
+import Terms from '../component/Terms/Terms';
+
 const Pageroute = () => {
   return (
     <>
@@ -19,8 +23,17 @@ const Pageroute = () => {
            <Route path='/blog'>
              <Route index element={<Blog />}/>
            </Route>
-           <Route path='/mainblog'>
+           <Route path='/mainblog/:id'>
              <Route index element={<MainBlog />}/>
+           </Route>
+           <Route path='/terms'>
+             <Route index element={<Terms />}/>
+           </Route>
+           <Route path='/privacy'>
+             <Route index element={<PrivacyFooter />}/>
+           </Route>
+           <Route path='/faq'>
+             <Route index element={<Faq />}/>
            </Route>
        </Routes>
 

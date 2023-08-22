@@ -12,7 +12,7 @@ import axios from "axios";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 
 export default function MainBlog() {
     const [newData, setNewData]=useState([])
@@ -34,8 +34,9 @@ export default function MainBlog() {
     }, [catId,Bid])
     
 
-    const location = useLocation()
-    let newId = location.state.id
+    // const location = useLocation()
+    // let id = location.state.id
+    const {id}=useParams()
     // console.log('location idddd',newId)
     // const sliderSettings = {
     //     dots: true,
@@ -84,9 +85,9 @@ export default function MainBlog() {
         }
     };
 
-    const oncardClick = (id)=>{
+    const oncardClick = ()=>{
         console.log('onclick card', id)
-        let url = `https://paybycal.com/api/h_single_article_web.php?id=${newId}`
+        let url = `https://paybycal.com/api/h_single_article_web.php?id=${id}`
         // let url = `https://paybycal.com/api/h_article_cat_list_web.php?id=11`
         console.log(url);
         axios.get(url).then((resp) => {
