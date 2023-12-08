@@ -6,6 +6,11 @@ h1, h2,h3,h4,h5,h6{
     height: 100% !important;
 }
 
+#respBlog h2{
+    /* border: 2px solid black; */
+    /* margin: 10px 0px; */
+}
+
 .authanddate2 {
     display: flex;
     /* justify-content: space-between; */
@@ -92,7 +97,7 @@ margin-top: 20px;
         margin-top: 50px;
     }
     .simimg{
-        border: 1px solid green;
+        /* border: 1px solid green; */
         max-height: auto !important;
     }
 }

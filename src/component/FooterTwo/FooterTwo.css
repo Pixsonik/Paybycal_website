@@ -109,3 +109,35 @@ color: #747373;
         flex-direction: column;
     }
   }
+
+  @media (max-width:420px){
+    .footercontent{display: none !important;}
+  .mobileDIv{
+    /* border: 2px solid black; */
+    display: block !important;
+  }
+  .mobileDIvRow{
+    /* border: 2px solid green; */
+    display: flex !important;
+    justify-content: space-around;
+  }
+
+  .MfirstCol{
+    /* border: 2px solid red; */
+    text-decoration: none;
+  }
+  .MfirstCol a{
+    text-decoration: none;
+  }
+  .MfirstCol ul{
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .MsecondCol{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

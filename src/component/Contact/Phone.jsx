@@ -30,7 +30,7 @@ const Phone = () => {
                     <a className="iconSecTexta" target="_blank" href="tel: 8108336060">+91 8108336060</a>
                   </p>
                 </div>
-              </div>
+              </div> 
               {/* email */}
               <div id="emaildiv" className="iconDiv">
                 <div className="col-lg-3">

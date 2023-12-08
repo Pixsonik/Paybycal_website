@@ -12,7 +12,7 @@ export default function Terms() {
     <>
     <Navbar />
     <div className="termDiv" style={{padding:'0px 80px'}}>
-    <h1 style={{textAlign:'center', fontSize:'40px',margin:'20px'}}>Terms Of Use</h1>
+    <h1 style={{textAlign:'center', fontSize:'40px',margin:'20px'}}>Terms & Conditions</h1>
     <p style={{fontWeight:'bold'}}>
       This document is an electronic record in terms of Information Technology
       Act, 2000 and rules there under as applicable and the amended provisions

@@ -147,7 +147,21 @@ export default function MainBlog() {
                 {newData.map((element)=>{
                     return (<div className="mblogMaindiv">
                     <span class="badge text-bg-primary">{element.cat_name}</span>
-                    <h5 class="card-title">{element.title}</h5>
+                    <h5 style={{ marginBottom: '10px' }} class="card-title">{element.title}</h5>
+                    {/* <div className="authanddate2">
+                        <div className="authur2">
+                            <div className="blogSingleImg2">
+                                <img src={element.author_image? element.author_image: Blogimg} alt="" /></div>
+                            <p>{element.author}</p>
+                        </div>
+                        <div className="blogDate2">{new Date(element.create_time).toDateString().slice(3)}</div>
+                    </div> */}
+
+                    {/* <div className="mblogMainPicDiv">
+                        <img src={element.image} alt="" />
+                    </div> */}
+
+                    <div id='respBlog' dangerouslySetInnerHTML={{__html: newData[0].content}} />
                     <div className="authanddate2">
                         <div className="authur2">
                             <div className="blogSingleImg2">
@@ -156,16 +170,9 @@ export default function MainBlog() {
                         </div>
                         <div className="blogDate2">{new Date(element.create_time).toDateString().slice(3)}</div>
                     </div>
-                    {/* <div className="mblogMainPicDiv">
-                        <img src={element.image} alt="" />
-                    </div> */}
-
-                    <div id='respBlog'
-                        dangerouslySetInnerHTML={{__html: newData[0].content}}
-                        />
                     </div>)
                 })}
-      
+      {NoSimialrCatFound ?null:<h1 style={{ padding: '3px 0px', fontSize: '25px',marginBottom:'-40px',marginTop:'20px' }}>Similar Blog's</h1>}
                 {
                     NoSimialrCatFound ? <h2 className='text-center mt-5 p-3'>No Similar Blogs </h2> : 
                     <Carousel
@@ -185,7 +192,7 @@ export default function MainBlog() {
                         rewindWithAnimation={true}
                     >
                         {similar.map((item)=>{
-                            return (<div className='simcol'> <div onClick={()=>{mainpage(item.id)}} class="card" style={{ }}>
+                            return (<><div className='simcol'> <div onClick={()=>{mainpage(item.id)}} class="card" style={{ }}>
                             <img src={item.image} class="card-img-top simimg" alt="..." />
                             <div class="card-body catbody">
                                 <span class="badge text-bg-primary">{item.cat_name}</span>
@@ -203,7 +210,7 @@ export default function MainBlog() {
                                     <div className="blogDate">{new Date(item.create_time).toDateString().slice(3)}</div>
                                 </div>
                             </div>
-                        </div></div>)
+                        </div></div></>)
                         })}
 
                 
